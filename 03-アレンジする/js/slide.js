@@ -3,9 +3,8 @@ const swiper = new Swiper('.swiper', {
     //    direction: 'vertical',
     loop: true,
 
-    // スピードを調整
-    speed: 300,
-    spaceBetween: 100,
+    // アニメーション間隔を調整 ミリ秒
+    speed: 800,
 
     // If we need pagination
     pagination: {
@@ -27,7 +26,10 @@ const swiper = new Swiper('.swiper', {
     },
 
     // 自動再生
-    autoplay: true,
+    autoplay: {
+        // 表示間隔 ミリ秒
+        delay: 3000,
+    },
 
     // フェード
     effect: 'fade',
